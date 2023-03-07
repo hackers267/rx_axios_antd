@@ -3,9 +3,11 @@ lockfileVersion: 5.4
 specifiers:
   '@microsoft/api-extractor': ^7.34.4
   '@rollup/plugin-typescript': ^11.0.0
-  '@silence_zhpf/rx_axios': 0.0.1-alpha
+  '@silence_zhpf/rx_axios': 0.0.2-alpha.1
   '@types/jest': ^29.4.0
   '@typescript-eslint/eslint-plugin': ^5.0.0
+  antd-observable: ^0.0.7
+  axios: ^1.3.4
   eslint: ^8.35.0
   eslint-config-prettier: ^8.6.0
   eslint-config-standard-with-typescript: ^34.0.0
@@ -17,12 +19,16 @@ specifiers:
   prettier: ^2.8.4
   rimraf: ^4.3.0
   rollup: ^3.18.0
+  rxjs: ^7.8.0
   ts-jest: ^29.0.5
   tslib: ^2.5.0
   typescript: ^4.9.5
 
 dependencies:
-  '@silence_zhpf/rx_axios': 0.0.1-alpha
+  '@silence_zhpf/rx_axios': 0.0.2-alpha.1
+  antd-observable: 0.0.7
+  axios: 1.3.4
+  rxjs: 7.8.0
 
 devDependencies:
   '@microsoft/api-extractor': 7.34.4
@@ -828,8 +834,8 @@ packages:
       string-argv: 0.3.1
     dev: true
 
-  /@silence_zhpf/rx_axios/0.0.1-alpha:
-    resolution: {integrity: sha512-xkkQ3JR/nMe0Bn8PwhVdRZ3TiKkmHG443Ty+hsMz/uh/VEx9vrp/IA/bWRjR8VB0QLtftjnMX2FwP/vB2NHckw==}
+  /@silence_zhpf/rx_axios/0.0.2-alpha.1:
+    resolution: {integrity: sha512-Sw3+5xaAhUXqt1z+ljyedA7Tjd8xXBddmqtJFUc4KnoeIiZEu8qy0y83Mli2NbbCALHfK3Hn5m7AJ+asreyAzA==}
     dependencies:
       axios: 1.3.4
       rxjs: 7.8.0
@@ -1135,6 +1141,12 @@ packages:
     resolution: {integrity: sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA==}
     engines: {node: '>=10'}
     dev: true
+
+  /antd-observable/0.0.7:
+    resolution: {integrity: sha512-RzcUj6GxuYxwtH9c6LQF7CxoswTdoiKcw8372nKDUjk0Ww8zEq7qe1e05Qxe0CerbbXffCHac0duc1hlctMvDA==}
+    dependencies:
+      rxjs: 7.8.0
+    dev: false
 
   /anymatch/3.1.3:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
