@@ -7,7 +7,7 @@
   "scripts": {
     "api": "api-extractor run --local",
     "build": "npm run clean && npm test && npm run package && npm run api",
-    "clean": "rimraf libs coverage temp",
+    "clean": "rimraf libs coverage",
     "package": "rollup -c rollup.config.ts --configPlugin typescript",
     "test": "jest"
   },
