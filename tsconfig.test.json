@@ -23,6 +23,7 @@
     "tests"
   ],
   "exclude": [
-    "libs"
+    "libs",
+    "node_modules"
   ]
 }
