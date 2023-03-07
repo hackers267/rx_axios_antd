@@ -9,6 +9,12 @@
     "build": "npm run clean && npm test && npm run package && npm run api",
     "clean": "rimraf libs coverage",
     "package": "rollup -c rollup.config.ts --configPlugin typescript",
+    "prerelease": "standard-version -p",
+    "prerelease:alpha": "npm run build && npm run api && standard-version -p alpha",
+    "prerelease:beta": "npm run build && npm run api && standard-version -p beta",
+    "release": "npm run build && npm run api && standard-version",
+    "release:major": "npm run build && npm run api && standard-version -r major",
+    "release:minor": "npm run build && npm run api && standard-version -r minor",
     "test": "jest"
   },
   "files": [
