@@ -1,7 +1,6 @@
-import rxAxios from "@silence_zhpf/rx_axios";
 import { type Observable } from "rxjs";
-import { pickData, toOption } from "antd-observable";
-import { type Option } from "antd-observable/dist/antd-observable";
+import { type Option, pickData, toOption } from "antd-observable";
+import rxAxios from "@silence_zhpf/rx_axios";
 
 export function options(url: string): Observable<Option[]>;
 export function options(url: string, field: string): Observable<Option[]>;
