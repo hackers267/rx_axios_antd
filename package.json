@@ -32,6 +32,9 @@
     "name": "silence_zhpf",
     "email": "silence_zhpf@aliyun.com"
   },
+  "repository": {
+    "url": "https://github.com/hackers267/rx_axios_antd"
+  },
   "license": "MIT",
   "dependencies": {
     "@silence_zhpf/rx_axios": "0.0.2-alpha.1",
