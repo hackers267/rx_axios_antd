@@ -9,6 +9,7 @@ export default defineConfig([
       file: "libs/index.esm.js",
     },
     plugins: [typescript()],
+    external: ["antd-observable", "@silence_zhpf/rx_axios"],
   },
   {
     input: "src/index.ts",
@@ -16,10 +17,12 @@ export default defineConfig([
       format: "umd",
       file: "libs/index.aio.js",
       globals: {
-        name: "rx_axios_antd",
+        "antd-observable": "antd_observable",
+        "@silence_zhpf/rx_axios": "rx_axios",
       },
       name: "rx_axios_antd",
     },
+    external: ["antd-observable", "@silence_zhpf/rx_axios"],
     plugins: [typescript()],
   },
   {
@@ -28,6 +31,7 @@ export default defineConfig([
       format: "commonjs",
       file: "libs/index.js",
     },
+    external: ["antd-observable", "@silence_zhpf/rx_axios"],
     plugins: [typescript()],
   },
 ]);
